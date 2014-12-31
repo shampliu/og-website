@@ -1,0 +1,190 @@
+	
+
+/* Header */
+
+	#header {
+		top:0;
+		left:0;
+		cursor: default;
+		z-index: 10000;
+		width:100%;
+		background:transparent;
+		position:fixed;
+		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
+	
+	}
+
+
+		#header nav {
+			position: absolute;
+			width: 100%;
+
+		}
+			#header #logo {
+				float:left;
+				font-family: Futura;
+				text-transform: uppercase;
+				letter-spacing: 0.1em;
+				font-weight: 100;
+				font-size:1.5em;
+
+			}
+				#header #logo a {
+					text-decoration: none;
+					color: inherit;
+					padding-left:1em;
+				}
+			#header nav ul {
+				float: right;
+				text-transform: uppercase;
+				font-family: Helvetica Neue;
+				font-weight: bold;
+				font-size: 0.8em;
+				position: relative;
+				top: 8px;
+
+			}
+				#header nav ul li {
+					float: left;
+					list-style: none;
+
+				}
+					#header nav ul li:last-child {
+							padding-right:1em;
+						}
+
+					#header nav ul li a {
+						color: inherit;
+						display: inline-block;
+						line-height: 1em;
+						padding: 0.6em 0.75em;
+						text-decoration: none;
+						opacity: 0.6;
+					}
+						#header nav ul li a:hover {
+							border-bottom: 2px solid black;
+							padding-bottom: 0.5em;
+							-moz-transition: all 0.2s ease-in-out;
+							-webkit-transition: all 0.2s ease-in-out;
+							-o-transition: all 0.2s ease-in-out;
+							-ms-transition: all 0.2s ease-in-out;
+							transition: all 0.2s ease-in-out;
+							opacity: 1;
+						}
+
+/* Banner */
+#banner {
+	/*background-image: url("")*/
+	background:grey;
+	background-attachment: fixed;
+	backround-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	padding: 6.5em 0;
+	
+}
+
+	#inner {
+		
+
+		
+	}
+
+/* Icon Row */
+	.icons {
+
+
+	}
+		.icons li {
+			display: inline-block;
+			list-style: none;
+		}
+
+	.icon	{
+		-moz-transition: all 0.2s ease-in-out;
+		-webkit-transition: all 0.2s ease-in-out;
+		-o-transition: all 0.2s ease-in-out;
+		-ms-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+		display: inline-block;
+		font-size: 1.25em;
+		left: 0;
+		text-decoration: none;
+		width: 1.5em;
+		font-family: FontAwesome;
+		color: black;
+		opacity: 0.6;
+	}
+		.icon:hover {
+			opacity: 1.0;
+			border-bottom: 2px solid black;
+			padding-bottom: 0.2em;
+		}
+		.icon > .label {
+			display:none;
+		}
+
+
+
+/* Icons */
+
+/* Avid Description */
+#avid {
+	display:inline-block;
+	width: 200px;
+	text-align: left;
+	top: 1.5em;
+	overflow:auto;
+	
+	
+}
+	#avid:before {
+		content: '';
+		position: absolute;
+		left:2.5em;
+		bottom:0;
+		width:140px;
+		border-bottom:2px solid black;
+		opacity: 0.6;
+	}
+	#avid ul {
+	}
+		#avid ul li {
+			list-style-type: none;
+			font-size:1em;
+		}
+
+#avid-container {
+	font-family: Helvetica Neue;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: rgba(0,0,0,0.6);
+	overflow: hidden;
+
+}
+
+#avid-text {
+	display:inline-block;
+	position: relative;
+	left:45%;
+	font-size:1.4em;
+	margin-right:2.5em;
+}
+	#avid-text p {
+		line-height:1.1em;
+
+	}
+
+
+
+
+
+
+
+
+
