@@ -1,8 +1,8 @@
-$('#avid').easyTicker({
+$('#ticker').easyTicker({
 	direction: 'up',
 	easing: 'swing',
 	speed: 'slow',
-	interval: 2000,
+	interval: 1600,
 	height: 'auto',
 	visible: 1,
 	mousePause: 0,
@@ -15,19 +15,4 @@ $('#avid').easyTicker({
 	}
 });
 
-$(document).ready(function(){
-	var $square = $("#bounce");
-	bounce();
-	function bounce() {
-	    $square.animate({
-	        left: "+=10"
-	    }, 800, function() {
-	        $square.animate({
-	            left: "-=10"
-	        }, 800, function() {
-	            bounce();
-	        })
-	    });
-	}
 
-})
