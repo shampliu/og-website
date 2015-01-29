@@ -9,7 +9,7 @@ html {
 
 body {
 	height:100%;
-  padding-top: 50px;
+  /*padding-top: 50px;*/
   /*padding-bottom: 20px;*/
 }
 
@@ -43,6 +43,29 @@ body {
 #sidebar li.active {
   border:0 #eee solid;
   border-right-width:5px;
+}
+
+@media(min-width:767px) {
+  .navbar {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    padding: 20px 20px;
+    border-bottom: 0;
+    letter-spacing: 1px;
+    background: none; 
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
+  }
+    .navbar > a {
+      color: white;
+    }
+
+  .top-nav-collapse {
+    padding: 0px 20px;
+    background-color: #333333;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+  }
 }
 
 
