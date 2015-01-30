@@ -16,10 +16,9 @@ body {
 .banner {
 	min-height: 100%;
 	overflow: hidden;
-  background-image: url(https://unsplash.imgix.net/photo-1418226970361-9f1f7227d638?fit=crop&fm=jpg&q=75&w=1050);
+  background-image: url(../img/homeBanner2.jpg);
   background-attachment: fixed;
-  background-size: 100%;
-	
+  background-size: cover;
 }
 
 .affix-top,.affix{
@@ -47,8 +46,8 @@ body {
 
 @media(min-width:767px) {
   .navbar {
-    box-shadow: none !important;
-    -webkit-box-shadow: none !important;
+    box-shadow: none ;
+    -webkit-box-shadow: none;
     padding: 20px 20px;
     border-bottom: 0;
     letter-spacing: 1px;
@@ -57,16 +56,47 @@ body {
     -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
     transition: background .5s ease-in-out,padding .5s ease-in-out;
   }
-    .navbar > a {
+    .navbar a {
       color: white;
     }
 
+    .navbar-default .navbar-brand {
+      color: black;
+      text-transform: lowercase;
+    }    
+
+    .navbar-default .navbar-nav > li > a {
+      color: black;
+    }
+    .navbar-default .navbar-nav > .active > a,
+    .navbar-default .navbar-nav > .active > a:hover,
+    .navbar-default .navbar-nav > .active > a:focus {
+      color: black ;
+      background-color: rgba(255,255,255,0);
+    }
+
+/* Added Classes by jQuery */
   .top-nav-collapse {
     padding: 0px 20px;
-    background-color: #333333;
-    border-bottom: 1px solid rgba(255,255,255,.3);
+    background-color: white;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
   }
 }
+
+
+/* Photo */
+.photo img { 
+  
+}
+
+.photo {
+  width: 50%;
+  overflow: hidden;
+  display:block;
+}
+
 
 
 
