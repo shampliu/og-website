@@ -11,7 +11,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css"> -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/animate.css">
 
@@ -52,12 +51,12 @@
         <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
         <p>To see the difference between static and fixed top navbars, just scroll.</p>
         <p>
-          <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
+          <a class="btn btn-lg btn-primary" href="" role="button">View navbar docs &raquo;</a>
         </p>
       </div>
     </div>
-    <!-- <div class="container-full">
 
+    <div class="container">
       <div class="row">
        
         <div class="col-lg-12 text-center v-center">
@@ -69,26 +68,21 @@
         </div>
           
       </div> 
-    </div>  -->
-
-
-    <!-- <div id="photoContainer" class="js-isotope" data-isotope-options='{ "columnWidth": 200, "itemSelector": ".photo" }'>
-      <div class="photo photo-l one-shot"><a href="https://www.flickr.com/photos/spaceabstract/16015609517" title="- off the wall - [Explored 1/5] by Chang Liu, on Flickr"><img src="https://farm9.staticflickr.com/8576/16015609517_e7d399ff23_z.jpg" width="640" height="388" alt="- off the wall - [Explored 1/5]"></a></div>
-      <div class="photo photo-l two-shot"><a href="https://www.flickr.com/photos/spaceabstract/15630715429" title="To the End by Chang Liu, on Flickr"><img src="https://farm8.staticflickr.com/7483/15630715429_20ed57fa16_z.jpg" width="640" height="350" alt="To the End"></a></div>
-      <div class="photo photo-l one-shot"><a href="https://www.flickr.com/photos/spaceabstract/15964712868" title="Des Comme by Chang Liu, on Flickr"><img src="https://farm8.staticflickr.com/7582/15964712868_bec5bc2529_z.jpg" width="640" height="313" alt="Des Comme"></a></div>
-      <div class="photo photo-l one-shot"><a href="https://www.flickr.com/photos/spaceabstract/14955757404" title="Temescal by Chang Liu, on Flickr"><img src="https://farm4.staticflickr.com/3937/14955757404_af59e27fa0_z.jpg" width="640" height="420" alt="Temescal"></a></div>
-      <div class="photo photo-l two-shot"><a href="https://www.flickr.com/photos/spaceabstract/11804476534" title="Untitled by Chang Liu, on Flickr"><img src="https://farm4.staticflickr.com/3665/11804476534_437548a71b_z.jpg" width="640" height="358" alt="Untitled"></a></div>
-    </div> -->
-    
-    <div class="container">
-      <div id="photoContainer">
-        <div class="photo"><h1>blasjdkfl;ajsl;dfjasdf</h1></div>
-        <div class="photo"><h1>asl;dkfjl;asdjf;a</h1></div>
-        <div class="photo"><h1>a;sldfjal;sdf</h1></div>
-        <div class="photo"><h1>al;sdkjfl;asdjf</hi></div>
-
-      </div>
     </div>
+    <div class="container">
+      <ul class="grid effect-2" id="grid">
+        <li><a href="https://www.flickr.com/photos/spaceabstract/16015609517" title="- off the wall - [Explored 1/5] by Chang Liu, on Flickr"><img src="https://farm9.staticflickr.com/8576/16015609517_e7d399ff23_z.jpg"></a></li>
+        <li><a href="https://www.flickr.com/photos/spaceabstract/15964712868" title="Des Comme by Chang Liu, on Flickr"><img src="https://farm8.staticflickr.com/7582/15964712868_bec5bc2529_z.jpg"></a></li>
+        <li><a href="https://www.flickr.com/photos/spaceabstract/15630715429" title="To the End by Chang Liu, on Flickr"><img src="https://farm8.staticflickr.com/7483/15630715429_20ed57fa16_z.jpg"></a></li>
+        <li><a href="https://www.flickr.com/photos/spaceabstract/14955757404" title="Temescal by Chang Liu, on Flickr"><img src="https://farm4.staticflickr.com/3937/14955757404_af59e27fa0_z.jpg"></a></li>
+        <li><a href="https://www.flickr.com/photos/spaceabstract/14984754000" title="i know this too well by Chang Liu, on Flickr"><img src="https://farm4.staticflickr.com/3852/14984754000_453bfaac04_z.jpg"></a></li>
+        <li><a href="https://www.flickr.com/photos/spaceabstract/14929608236" title="22 by Chang Liu, on Flickr"><img src="https://farm4.staticflickr.com/3902/14929608236_a66206a021_z.jpg"></a></li>
+        <li><a href="https://www.flickr.com/photos/spaceabstract/14843270993" title="d i s o r i e n t by Chang Liu, on Flickr"><img src="https://farm4.staticflickr.com/3925/14843270993_9818da2f86_z.jpg"></a></li>
+        <li><a href="https://www.flickr.com/photos/spaceabstract/14575329900" title="Stars by Chang Liu, on Flickr"><img src="https://farm6.staticflickr.com/5592/14575329900_2e3cd2a225_z.jpg"></a></li>
+      </ul>
+    </div>
+
+      
 
     <!-- <div class="navbar navbar-default navbar-fixed-bottom">
       <div class="container-fluid">
@@ -107,22 +101,23 @@
     <script src="js/main.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/vendor/masonry.pkgd.min.js"></script>
+    <script src="js/vendor/imagesloaded.pkgd.min.js"></script>
+    <script src="js/vendor/classie.js"></script>
+    <script src="js/vendor/AnimOnScroll.js"></script>
     
-
     <script>
-      var $container = $('#photoContainer');
-      // init
-      $container.isotope({
-        // options
-        itemSelector: '.photo',
-        layoutMode: 'masonry'
-      });
-
-
-
+      new AnimOnScroll( document.getElementById( 'grid' ), {
+        minDuration : 0.4,
+        maxDuration : 0.7,
+        viewportFactor : 0.2
+      } );
     </script>
+      
+
+
+
+
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
