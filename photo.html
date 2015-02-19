@@ -24,7 +24,7 @@
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a href="" class="navbar-brand">// CHANGLIU</a>
+          <a href="" class="navbar-brand" style="display:none;">// CHANGLIU</a>
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle Nav</span>
             <span class="icon-bar"></span>
@@ -69,16 +69,29 @@
           
       </div> 
     </div>
+
+
     <div class="container">
-      <ul class="grid effect-2" id="grid">
-        <li><a href="https://www.flickr.com/photos/spaceabstract/16015609517" title="- off the wall - [Explored 1/5] by Chang Liu, on Flickr"><img src="https://farm9.staticflickr.com/8576/16015609517_e7d399ff23_z.jpg"></a></li>
-        <li><a href="https://www.flickr.com/photos/spaceabstract/15964712868" title="Des Comme by Chang Liu, on Flickr"><img src="https://farm8.staticflickr.com/7582/15964712868_bec5bc2529_z.jpg"></a></li>
-        <li><a href="https://www.flickr.com/photos/spaceabstract/15630715429" title="To the End by Chang Liu, on Flickr"><img src="https://farm8.staticflickr.com/7483/15630715429_20ed57fa16_z.jpg"></a></li>
-        <li><a href="https://www.flickr.com/photos/spaceabstract/14955757404" title="Temescal by Chang Liu, on Flickr"><img src="https://farm4.staticflickr.com/3937/14955757404_af59e27fa0_z.jpg"></a></li>
-        <li><a href="https://www.flickr.com/photos/spaceabstract/14984754000" title="i know this too well by Chang Liu, on Flickr"><img src="https://farm4.staticflickr.com/3852/14984754000_453bfaac04_z.jpg"></a></li>
-        <li><a href="https://www.flickr.com/photos/spaceabstract/14929608236" title="22 by Chang Liu, on Flickr"><img src="https://farm4.staticflickr.com/3902/14929608236_a66206a021_z.jpg"></a></li>
-        <li><a href="https://www.flickr.com/photos/spaceabstract/14843270993" title="d i s o r i e n t by Chang Liu, on Flickr"><img src="https://farm4.staticflickr.com/3925/14843270993_9818da2f86_z.jpg"></a></li>
-        <li><a href="https://www.flickr.com/photos/spaceabstract/14575329900" title="Stars by Chang Liu, on Flickr"><img src="https://farm6.staticflickr.com/5592/14575329900_2e3cd2a225_z.jpg"></a></li>
+
+      <div id="photoFilters" class="button-group">
+        <button class="button is-checked" data-filter="*">show all</button>
+        <button class="button" data-filter=".portrait">portrait</button>
+        <button class="button" data-filter=".landscape">landscape</button>
+      </div>
+
+
+      <ul class="grid effect-2 photos" id="grid">
+        <li class="photo"><a class="portrait" href="https://www.flickr.com/photos/spaceabstract/16015609517" title="- off the wall - [Explored 1/5] by Chang Liu, on Flickr"><img src="https://farm9.staticflickr.com/8576/16015609517_e39e19714b_z.jpg"></a></li>
+        <li class="photo"><a class="portrait" href="https://www.flickr.com/photos/spaceabstract/15964712868" title="Des Comme by Chang Liu, on Flickr"><img src="https://farm8.staticflickr.com/7582/15964712868_2aab7ea858_z.jpg"></a></li>
+        <li class="photo"><a class="portrait" href="https://www.flickr.com/photos/spaceabstract/15630715429" title="To the End by Chang Liu, on Flickr"><img src="https://farm8.staticflickr.com/7483/15630715429_6da075a1bd_z.jpg"></a></li>
+        <li class="photo"><a class="portrait" href="https://www.flickr.com/photos/spaceabstract/14955757404" title="Temescal by Chang Liu, on Flickr"><img src="https://farm4.staticflickr.com/3937/14955757404_4beabd9bf3_z.jpg"></a></li>
+        <li class="photo"><a class="portrait" href="https://www.flickr.com/photos/spaceabstract/14984754000" title="i know this too well by Chang Liu, on Flickr"><img src="https://farm4.staticflickr.com/3852/14984754000_332a6db8f1_z.jpg"></a></li>
+        <li class="photo"><a class="portrait" href="https://www.flickr.com/photos/spaceabstract/14929608236" title="22 by Chang Liu, on Flickr"><img src="https://farm4.staticflickr.com/3902/14929608236_47b71fc084_z.jpg"></a></li>
+        <li class="photo"><a class="portrait"href="https://www.flickr.com/photos/spaceabstract/14843270993" title="d i s o r i e n t by Chang Liu, on Flickr"><img src="https://farm4.staticflickr.com/3925/14843270993_b51153779b_z.jpg"></a></li>
+        <li class="photo"><a class="landscape" href="https://www.flickr.com/photos/spaceabstract/14575329900" title="Stars by Chang Liu, on Flickr"><img src="https://farm6.staticflickr.com/5592/14575329900_14aa6d6215_z.jpg"></a></li>
+        <li class="photo"><a class="portrait" href="https://www.flickr.com/photos/spaceabstract/14569405326" title="Here Goes by Chang Liu, on Flickr"><img src="https://farm4.staticflickr.com/3856/14569405326_ebdbb943ec_z.jpg"></a></li>
+        <li class="photo"><a class="portrait" href="https://www.flickr.com/photos/spaceabstract/14314865330" title="Another Reflection by Chang Liu, on Flickr"><img src="https://farm3.staticflickr.com/2939/14314865330_de80ffd845_z.jpg"></a></li>
+        <li class="photo"><a class="portrait" href="https://www.flickr.com/photos/spaceabstract/13939978301" title="Flume by Chang Liu, on Flickr"><img src="https://farm8.staticflickr.com/7267/13939978301_3eab64f334_z.jpg"></a></li>
       </ul>
     </div>
 
@@ -101,7 +114,7 @@
     <script src="js/main.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="js/vendor/masonry.pkgd.min.js"></script>
+    <script src="js/vendor/isotope.pkgd.min.js"></script>
     <script src="js/vendor/imagesloaded.pkgd.min.js"></script>
     <script src="js/vendor/classie.js"></script>
     <script src="js/vendor/AnimOnScroll.js"></script>
@@ -112,6 +125,34 @@
         maxDuration : 0.7,
         viewportFactor : 0.2
       } );
+    </script>
+
+    <script>
+      $( function() {
+        // init Isotope
+        var $container = $('.photos').isotope({
+          itemSelector: '.photo',
+          layoutMode: 'masonry'
+        });
+        
+        // bind filter button click
+        $('#photoFilters').on( 'click', 'button', function() {
+          console.log("penis");
+          var filterValue = $( this ).attr('data-filter');
+          
+          $container.isotope({ filter: filterValue });
+        });
+        // change is-checked class on buttons
+        $('.button-group').each( function( i, buttonGroup ) {
+          var $buttonGroup = $( buttonGroup );
+          $buttonGroup.on( 'click', 'button', function() {
+            $buttonGroup.find('.is-checked').removeClass('is-checked');
+            $( this ).addClass('is-checked');
+          });
+        });
+        
+      });
+
     </script>
       
 

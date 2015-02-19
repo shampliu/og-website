@@ -1,8 +1,7 @@
-
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -67,6 +66,8 @@ body {
     }
 
     .navbar-default .navbar-brand {
+      font-family: 'Lato', 'Helvetica Neue';
+      font-weight: 900;
       color: black;
       text-transform: lowercase;
     }    
@@ -101,7 +102,7 @@ body {
 }
 
 .grid li {
-  display: block;
+  
   float: left;
   padding: 7px;
   width: 33%;
