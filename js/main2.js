@@ -51,7 +51,7 @@ function isotopeInit() {
 	// 			$(this).find('.description').stop().fadeTo("fast", 0);	
 	// 		});	
 	// }
-	
+		
 	setColumns();	
 	gridContainer.isotope({		
 		resizable: false,
@@ -65,21 +65,6 @@ function isotopeInit() {
 	// $("#floatingCirclesG").fadeOut("slow");
 }
 
-///////////////////////////////////
-// Relocate Elements
-///////////////////////////////////
-
-// function relocateElements()
-// {	
-// 	if(jQuery('#container').width() <= 768) {
-// 		jQuery('#sidebar').insertAfter(jQuery('#content'));	
-// 		widgetsHidden = true;
-// 	}
-// 	else if(widgetsHidden) {
-// 		jQuery('#sidebar').insertAfter(jQuery('#mainNav'));
-// 	} 	
-// }
-
 ///////////////////////////////
 // Isotope Grid Resize
 ///////////////////////////////
@@ -87,7 +72,12 @@ function isotopeInit() {
 function setColumns()
 {	
 	var columns;
-	columns = Math.ceil(gridContainer.width()/thumbWidth);	
+	if (gridContainer.width() <= 400) {
+		columns = 1;
+	} 
+	else { 
+		columns = Math.ceil(gridContainer.width()/thumbWidth);	
+	}
 	colW = Math.floor(gridContainer.width() / columns);
 	$('.thumbs .item').each(function(id){
 		$(this).css('width',colW-gridGutter+'px');
@@ -113,10 +103,8 @@ $(window).load(function(){
 	filterInit();
 
 	// relocateElements();
-	
-	$(window).smartresize(function(){
+	$(window).bind("debouncedresize", function() {
+	// $(window).smartresize(function(){
 		gridResize();
-		sidebarAbsolute();
-		// relocateElements();
 	});		
 });
