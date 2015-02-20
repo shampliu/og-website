@@ -17,10 +17,7 @@ function filterInit() {
 		console.log(selector);
 		$('.thumbs').isotope({
 			filter: selector,			
-			hiddenStyle : {
-		    	opacity: 0,
-		    	scale : 1
-			}			
+	
 		});
 	
 		// if ( !$(this).hasClass('selected') ) {

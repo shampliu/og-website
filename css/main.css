@@ -21,7 +21,7 @@ body {
 .banner {
 	min-height: 100%;
 	overflow: hidden;
-  background-image: url(../img/homeBanner2.jpg);
+  background-image: url(../img/banner.jpg);
   background-attachment: fixed;
   background-size: cover;
 }

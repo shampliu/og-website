@@ -1,3 +1,25 @@
+.photography .item,
+.film .item {
+	background-size: cover;
+	background-position: center;
+}
+
+.code .item {
+	background-size: cover;
+	background-position: left left;
+}
+
+#filters {
+	list-style-type: none;
+	width: 100%;
+}
+	#filters li {
+		display: inline:;
+		width: 25%;
+	}
+
+
+
 /* Isotope ----------- */
 
 .isotope,
