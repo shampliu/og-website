@@ -34,21 +34,7 @@ function filterInit() {
 // Project thumbs 
 ///////////////////////////////
 
-function isotopeInit() {
-	
-	// if(!isMobile()) {
-	// 	$(".project.small a").hover(
-	// 		function() {
-	// 			$(this).find('.overlay').stop().fadeTo("fast", .9);
-	// 			$(this).find('.description').stop().fadeTo("fast", 1);
-	// 			$(this).find('img:last').attr('title','');	
-	// 		},
-	// 		function() {
-	// 			$(this).find('.overlay').stop().fadeTo("fast", 0);	
-	// 			$(this).find('.description').stop().fadeTo("fast", 0);	
-	// 		});	
-	// }
-		
+function isotopeInit() {	
 	setColumns();	
 	gridContainer.isotope({		
 		resizable: false,
@@ -69,10 +55,12 @@ function isotopeInit() {
 function setColumns()
 {	
 	var columns;
-	if (gridContainer.width() <= 400) {
+	if (gridContainer.width() <= 464) {
 		columns = 1;
+		$('.type').hide();
 	} 
 	else { 
+		$('.type').show();
 		columns = Math.ceil(gridContainer.width()/thumbWidth);	
 	}
 	colW = Math.floor(gridContainer.width() / columns);
@@ -99,9 +87,7 @@ $(window).load(function(){
 	isotopeInit();	
 	filterInit();
 
-	// relocateElements();
 	$(window).bind("debouncedresize", function() {
-	// $(window).smartresize(function(){
 		gridResize();
 	});		
 });
