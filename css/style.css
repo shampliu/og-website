@@ -1,3 +1,5 @@
+
+
 .photography .item,
 .film .item {
 	background-size: cover;
@@ -32,31 +34,55 @@
 #filters {
 	list-style-type: none;
 	width: 100%;
+	text-align: center;
 }
-	#filters li {
-		display: inline:;
-		width: 25%;
+	#filters #sort {
+		color: white;
+		background-color: #424242;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-weight: bold;
+		letter-spacing: 0.08em;
+		padding: 10px 0;
+
 	}
+	
 
 #bottom-bar { 
-	width: 10%;
+	width: 12%;
 	position: fixed;
 	left: 50%;
-	margin: 0 0 0 -5%; 
-	bottom: 0;
+	margin: 0 0 0 -6%; 
+	bottom: -60px;
 	background-color: white;
 	z-index: 100;
-}
 
-ul #filter-icons {
-	list-style-type: none;
-	width: 100%;
-}
+	-webkit-transition: bottom 350ms ease-in-out;
+  -moz-transition: bottom 350ms ease-in-out;
+  -o-transition: bottom 350ms ease-in-out;
+  transition: bottom 350ms ease-in-out;
 
-ul #filter-icons li {
+
+}
+	#bottom-bar:hover {
+		cursor: pointer;
+		bottom: -2%;
+	}
+
+/*ul #filter-icons li a {
 	display: inline-block;
 	width: 20%;
-	margin: 2px;
+	
+}*/
+
+#filters li a {
+	padding:  0 5px;
+	color: #424242;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	letter-spacing: 0.08em;
+
 }
 
 
@@ -181,7 +207,7 @@ nav.primary ul li span {
 
 nav.primary ul li:hover ul {
 	opacity: 10; 
-  	filter: alpha(opacity=100); 
+  filter: alpha(opacity=100); 
   	
 	height: auto;
 	overflow: auto;
