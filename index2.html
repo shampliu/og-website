@@ -12,59 +12,53 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+
   <link rel="stylesheet" href="css/normalize.css">
+
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/style.css">
-  <!-- <link rel="stylesheet" href="css/main2.css"> -->
-  <link rel="stylesheet" href="css/responsive-nav.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <!-- <link rel="stylesheet" href="css/responsive-nav.css"> -->
 
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 <!--   <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,900,800,600,700,500,300,200' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'> -->
 
-  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 
-  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="shortcut icon" href="./favicon.ico">
 
 </head>
 <body>
-    <nav class="nav-collapse">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
 
-
-
-  <!-- <div class="band navigation">
+  <div class="band navigation">
   
-    <nav class="primary container">
+    <nav class="primary">
+      <!-- <span class="logo"><a href="#">Chang Liu</a> </span> -->
+      <a class="logo" style="float:left;">Chang Liu</a>
     
       <ul>
     
         <li><a href="#">Home</a></li>
-        <li><a href="#">Portfolio</a>
-            <ul>
-              <li><a href="#"><span>- </span>Film</a></li>
-              <li><a href="#"><span>- </span>Gaming</a></li>
-              <li><a href="#"><span>- </span>TV</a></li>
-              <li><a href="#"><span>- </span>Music</a></li>
-            </ul>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">About</a>
+          <ul>
+            <li><a href="#"><span>- </span>Bio</a></li>
+            <li><a href="#"><span>- </span>Features</a></li>
+            <li><a href="#"><span>- </span>Resume</a></li>
+            <li><a href="#"><span>- </span>Inspiration</a></li>
+          </ul>
         </li>
-        <li><a href="#">About</a></li>
     
       </ul>
     
     </nav>
   
-  </div><!--end band-->
+  </div>
 
-  <div class="container">
+  <!-- <div class="container">
     
       <div class="twelve columns">
         <h2 class="remove-bottom" style="display: inline-block;"><a href="index.html" class="nav">Chang Liu</a></h2>
@@ -90,14 +84,22 @@
           <li>I like to  <a href="https://www.quora.com/Sanny-Lin-1" target="_blank">ask and answer questions</a></li>
         </ul>
       </div>
-    </div>
+    </div> -->
 
-  <ul id="filters">
-    <li><a href="#" data-filter="*" class="selected">All</a></li>
-    <li><a href="#" data-filter=".film">Film</a></li>
-    <li><a href="#" data-filter=".photography">Photography</a></li>
-    <li><a href="#" data-filter=".code">Code</a></li>
-  </ul>
+  
+  <div id="bottom-bar">
+        
+    <ul id="filters">
+      <li>Sort</li>
+      <li><ul id="filter-icons">
+        <li><a href="#" data-filter="*" class="selected">All</a></li>
+        <li><a href="#" data-filter=".film" class="fa fa-film fa-lg"></a></li>
+        <li><a href="#" data-filter=".photography" class="fa fa-camera-retro fa-lg"></a></li>
+        <li><a href="#" data-filter=".code" class="fa fa-code fa-lg"></a></li>
+      </ul></li>
+    </ul>
+  
+  </div>
 
   
 
@@ -106,7 +108,6 @@
 
     <a class="code" href="http://graphics.dailybruin.com/prime/winter-2015/mistress-of-magic/">
       <div class="item" style="background-image: url(./img/mistress-of-magic.png);">
-        <!-- <div class="type"><i class="fa fa-code fa-lg"></i></div> -->
         <div class="description">
           <div class="type"><i class="fa fa-code fa-lg"></i></div>
           <h6>Mistress of Magic</h6>
@@ -206,6 +207,42 @@
         </div>
       </div>
     </a>
+    <a class="film" href="https://vimeo.com/73923191">
+      <div class="item" style="background-image: url(./img/knighted.png);">
+        <div class="description">
+          <div class="type"><i class="fa fa-film fa-lg"></i></div>
+          <h6>Knighted</h6>
+          <p>asdfasdf</p>
+        </div>
+      </div>
+    </a>
+    <a class="film" href="https://vimeo.com/73923191">
+      <div class="item" style="background-image: url(./img/sci-fi.png);">
+        <div class="description">
+          <div class="type"><i class="fa fa-film fa-lg"></i></div>
+          <h6>Sci-Fi Films</h6>
+          <p>asdfasdf</p>
+        </div>
+      </div>
+    </a>
+    <a class="film" href="https://vimeo.com/73923191">
+      <div class="item" style="background-image: url(./img/eaves.png);">
+        <div class="description">
+          <div class="type"><i class="fa fa-film fa-lg"></i></div>
+          <h6>Eaves</h6>
+          <p>asdfasdf</p>
+        </div>
+      </div>
+    </a>
+    <a class="film" href="https://vimeo.com/73923191">
+      <div class="item" style="background-image: url(./img/chapman.png);">
+        <div class="description">
+          <div class="type"><i class="fa fa-film fa-lg"></i></div>
+          <h6>Sonder</h6>
+          <p>Application to Chapman University's Dodge Film School</p>
+        </div>
+      </div>
+    </a>
 
   </div>
 
@@ -216,13 +253,11 @@
     <ul class="navlinks">
       <li><a href="http://flickr.com/photos/spacebabstract" target="_blank"><i class="fa fa-flickr" id="info" style="color:#aaa"></i></a>
       <li><a href="http://linkedin.com/in/changliu95" target="_blank"><i class="fa fa-linkedin" id="info" style="color:#aaa"></i></a>
-      <li><a href="mailto:liu.chang@ucla.edu"><i class="fa fa-envelope-o" style="color:#aaa"></i></a>
+        <li><a href="http://vimeo.com/changliu"><i class="fa fa-vimeo-square" style="color:#aaa"></i></a></li>
+      <li><a href="mailto:liu.chang@ucla.edu"><i class="fa fa-envelope-o" style="color:#aaa"></i></a></li>
     </ul>
   </div>
-  <script src="js/responsive-nav.js"></script>
-  <script> 
-    var nav = responsiveNav(".nav-collapse");
-  </script>
+ 
   <script>
 
     window.onload = function() {
@@ -233,7 +268,7 @@
 
 
   </script>
-  <script src='http://isotope.metafizzy.co/isotope.pkgd.min.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.1.0/isotope.pkgd.min.js"></script>
   <script src="js/resize.js"></script>
   <script src="js/main2.js"></script>
 

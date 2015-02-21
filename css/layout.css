@@ -226,8 +226,10 @@
 		display: none;
 	}
 
-	.description{
-		/*background-color: rgba(255, 0, 0, 0);*/
+	.code .description,
+	.photography .description,
+	.film .description {
+		background: transparent;
     transform: translateY(0%);
     -moz-transform: translateY(0%);
     -o-transform: translateY(0%);
