@@ -18,11 +18,14 @@
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.4.3/css/animsition.min.css">
+
 
   <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 
+
 </head>
-<body>
+<body class="animsition">
   <!--[if lt IE 7]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
@@ -36,7 +39,7 @@
       <ul>
     
         <li><a href="#">Home</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="portfolio.html" class="animsition-link">Portfolio</a></li>
         <li><a href="#">About</a>
           <!-- <ul>
             <li><a href="#"><span>- </span>Bio</a></li>
@@ -51,6 +54,7 @@
     </nav>
   
   </div>
+  
   <div class="banner twelve columns" style="background: url(./img/banner.jpg) fixed; height: 100%;">
     <div class="inner">
       <h1>- works - </h1>
@@ -72,10 +76,38 @@
 
     </ul>
   </div>
+  <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.4.3/js/jquery.animsition.min.js"></script>
+  <script> 
+  $(document).ready(function() {
+  
+    $(".animsition").animsition({
+    
+      inClass               :   'fade-in',
+      outClass              :   'fade-out',
+      inDuration            :    800,
+      outDuration           :    800,
+      linkElement           :   '.animsition-link',
+      // e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
+      loading               :    true,
+      loadingParentElement  :   'body', //animsition wrapper element
+      loadingClass          :   'animsition-loading',
+      unSupportCss          : [ 'animation-duration',
+                                '-webkit-animation-duration',
+                                '-o-animation-duration'
+                              ],
+      //"unSupportCss" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+      //The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+      
+      overlay               :   false,
+      
+      overlayClass          :   'animsition-overlay-slide',
+      overlayParentElement  :   'body'
+    });
+  });
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.1.0/isotope.pkgd.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main2.js"></script>
+  </script>
+  
 
 </body>
 </html>

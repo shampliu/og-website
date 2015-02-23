@@ -92,18 +92,3 @@ $(window).load(function(){
 	});		
 });
 
-// jQuery to collapse the navbar on scroll
-$(window).scroll(function() {
-  if ($(".navig").offset().top > 50) {
-  	console.log("asdfasd");
-    $(".navig").removeClass(".navbar");
-    $(".navig").addClass(".navbar2");
-    // $(".navbar-brand").css("display", "block");
-
-  } else {
-    $(".navig").removeClass(".navbar2");
-    $(".navig").addClass(".navbar");
-    // $(".navbar-brand").css("display", "none");
-	}
-});
-
