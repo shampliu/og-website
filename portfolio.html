@@ -17,19 +17,21 @@
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.4.3/css/animsition.min.css">
 
   <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 
 </head>
-<body>
+<!-- <body class="animsition" style="background: url(./img/banner3.png)"> -->
+<body class="animsition">
 
   <div class="navig navbar">
     <nav class="primary">
       <a class="logo" style="float:left;">Chang Liu</a>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">About</a>
+        <li><a href="index.html" class="animsition-link">Home</a></li>
+        <li><a href="portfolio.html" class="animsition-link">Portfolio</a></li>
+        <li><a href="about.html">About</a>
           <!-- <ul>
             <li><a href="#"><span>- </span>Bio</a></li>
             <li><a href="#"><span>- </span>Features</a></li>
@@ -44,11 +46,15 @@
   
   </div>
   <div class="banner twelve columns" >
-    <!-- <div class="inner2">
-      <h1>- works - </h1>
-      <a href="#" class="fa fa-angle-double-down fa-lg" style="text-decoration: none; color: black;"></a>
-    </div> -->
+    <div class="inner2">
+      <h1>// works</h1>
+      <h5 style="color: #aaa;">code, film and photo</h5>
+    </div>
+    <div class="mini-bio">
+      <!-- <h1>- works - </h1> -->
+    </div>
   </div>
+
 
   
   <div id="bottom-bar">
@@ -290,6 +296,7 @@
     <ul class="navlinks">
       <li><a href="http://flickr.com/photos/spacebabstract" target="_blank"><i class="fa fa-flickr" id="info" style="color:#aaa"></i></a></li>
       <li><a href="http://linkedin.com/in/changliu95" target="_blank"><i class="fa fa-linkedin" id="info" style="color:#aaa"></i></a></li>
+      <li><a href="http://github.com/shampliu"><i class="fa fa-github" style="color:#aaa"></i></a></li>
       <li><a href="http://vimeo.com/changliu"><i class="fa fa-vimeo-square" style="color:#aaa"></i></a></li>
       <li><a href="mailto:liu.chang@ucla.edu"><i class="fa fa-envelope-o" style="color:#aaa"></i></a></li>
       
@@ -301,6 +308,36 @@
   <script src="js/plugins.js"></script>
   <script src="js/isotope.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.4.3/js/jquery.animsition.min.js"></script>
+  <script> 
+  $(document).ready(function() {
+  
+    $(".animsition").animsition({
+    
+      inClass               :   'fade-in',
+      outClass              :   'fade-out',
+      inDuration            :    600,
+      outDuration           :    600,
+      linkElement           :   '.animsition-link',
+      // e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
+      loading               :    true,
+      loadingParentElement  :   'body', //animsition wrapper element
+      // loadingClass          :   'animsition-loading',
+      unSupportCss          : [ 'animation-duration',
+                                '-webkit-animation-duration',
+                                '-o-animation-duration'
+                              ],
+      //"unSupportCss" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+      //The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+      
+      overlay               :   false,
+      
+      overlayClass          :   'animsition-overlay-slide',
+      overlayParentElement  :   'body'
+    });
+  });
+
+  </script>
 
 </body>
 </html>
