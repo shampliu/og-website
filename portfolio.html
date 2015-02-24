@@ -223,7 +223,7 @@
         </div>
       </div>
     </a>
-    <a class="film-popup film" href="http://player.vimeo.com/video/96878284">
+    <a class="film-popup film" href="https://vimeo.com/96878284">
       <div class="item" style="background-image: url(./img/rewind.png);">
         <div class="description">
           <div class="type"><i class="fa fa-film fa-lg"></i></div>
@@ -232,7 +232,7 @@
         </div>
       </div>
     </a>
-    <a class="film" href="hackillinois.html">
+    <a class="film-popup film" href="https://vimeo.com/86366213">
       <div class="item" style="background-image: url(./img/film-reel-2013.png);">
         <div class="description">
           <div class="type"><i class="fa fa-film fa-lg"></i></div>
@@ -241,7 +241,7 @@
         </div>
       </div>
     </a>
-    <a class="film-popup film" href="https://vimeo.com/73923191">
+    <a class="film-popup film" href="http://vimeo.com/73923191">
       <div class="item" style="background-image: url(./img/knighted.png);">
         <div class="description">
           <div class="type"><i class="fa fa-film fa-lg"></i></div>
@@ -250,7 +250,7 @@
         </div>
       </div>
     </a>
-    <a class="film" href="https://vimeo.com/73923191">
+    <a class="film-popup film" href="https://vimeo.com/73923191">
       <div class="item" style="background-image: url(./img/sci-fi.png);">
         <div class="description">
           <div class="type"><i class="fa fa-film fa-lg"></i></div>
@@ -259,7 +259,7 @@
         </div>
       </div>
     </a>
-    <a class="film" href="https://vimeo.com/73923191">
+    <a class="film-popup film" href="https://vimeo.com/73923191">
       <div class="item" style="background-image: url(./img/eaves.png);">
         <div class="description">
           <div class="type"><i class="fa fa-film fa-lg"></i></div>
@@ -268,7 +268,7 @@
         </div>
       </div>
     </a>
-    <a class="film" href="https://vimeo.com/73923191">
+    <a class="film-popup film" href="https://vimeo.com/73923191">
       <div class="item" style="background-image: url(./img/chapman.png);">
         <div class="description">
           <div class="type"><i class="fa fa-film fa-lg"></i></div>
@@ -277,7 +277,7 @@
         </div>
       </div>
     </a>
-    <a class="film" href="https://vimeo.com/73923191">
+    <a class="film-popup film" href="https://vimeo.com/73923191">
       <div class="item" style="background-image: url(./img/nowhere.png);">
         <div class="description">
           <div class="type"><i class="fa fa-film fa-lg"></i></div>
@@ -286,7 +286,7 @@
         </div>
       </div>
     </a>
-    <a class="film" href="https://vimeo.com/73923191">
+    <a class="film-popup film" href="https://vimeo.com/73923191">
       <div class="item" style="background-image: url(./img/conversation.png);">
         <div class="description">
           <div class="type"><i class="fa fa-film fa-lg"></i></div>
@@ -323,7 +323,35 @@
   $(document).ready(function() {
 
     $('.photo-popup').magnificPopup({type:'image'});
-    $('.film-popup').magnificPopup({type:'iframe'});
+    $('.film-popup').magnificPopup({
+      disableOn: 700,
+      type: 'iframe',
+      mainClass: 'mfp-fade',
+      removalDelay: 160,
+      preloader: false,
+
+      fixedContentPos: false,
+      iframe: {
+        markup: '<div class="mfp-iframe-scaler">'+
+                '<div class="mfp-close"></div>'+
+                '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
+                '</div>', // HTML markup of popup, `mfp-close` will be replaced by the close button
+
+        patterns: {
+    
+          vimeo: {
+            index: 'vimeo.com/',
+            id: '/',
+            src: 'https://player.vimeo.com/video/%id%?autoplay=0'
+          }
+        },
+
+        // you may add here more sources
+
+        srcAction: 'iframe_src', // Templating object key. First part defines CSS selector, second attribute. "iframe_src" means: find "iframe" and set attribute "src".
+      }
+
+    });
   
     $(".animsition").animsition({
     
